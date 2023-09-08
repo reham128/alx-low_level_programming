@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ *main - Entry point
  *
- *Description: puts function is for print otuput
+ * Discription: This code is for puts function with c programming language.
  *
  * Return: Always 0 (Success)
 */
@@ -12,4 +12,4 @@ int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
-}	
+}
