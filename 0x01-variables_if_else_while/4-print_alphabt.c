@@ -16,9 +16,7 @@ int main(void)
 	while (alpha <= 'z')
 	{
 		if (alpha == 'e' || alpha == 'q')
-		{
-			continue;
-		}
+			alpha++;
 		putchar(alpha);
 		alpha++;
 	}
