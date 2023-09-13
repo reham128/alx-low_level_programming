@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - entry point
  *
- * Return: Always 0.
- */
+ * Discription: Positive anything is better than negative nothing.
+ *
+ * Return: 0 (success)
+*/
 void print_alphabet(void)
 {
 	int i;
