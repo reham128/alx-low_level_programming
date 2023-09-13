@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * _abs - function that computes the absolute value of an integer.
+ * _abs -this is a function that computes the absolute value of an integer.
  *
  * @n: takes integer value.
  *
@@ -8,10 +8,9 @@
 */
 int _abs(int)
 {
+	int n;
+
 	if (n < 0)
-	{
 		n = (-1) * n;
-	}
-	else
-		return (0);
+	return (0);
 }
