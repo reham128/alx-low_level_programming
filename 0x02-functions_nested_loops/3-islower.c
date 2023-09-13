@@ -2,6 +2,8 @@
 /**
  * _islower - function that used to check for lower case letters.
  *
+ * @c: take input of the function.
+ *
  * Return: return 1 if c is lower case and return 0 if c is upper case.
  *
 */
