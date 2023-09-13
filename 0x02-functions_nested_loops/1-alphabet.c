@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - use _putchar to print the alphabet
  *
- * Discription: Positive anything is better than negative nothing.
- *
- * Return: 0 (success)
 */
 void print_alphabet(void)
 {
