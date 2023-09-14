@@ -17,10 +17,11 @@ void times_table(void)
 			_putchar(' ');
 			reslt = num1 * num2;
 			if (reslt <= 9)
-				_putchar(' ');
+				_putchar(reslt);
 			else
 				_putchar((reslt / 10) + '0');
 			_putchar((reslt % 10) + '0');
 		}
+		_putchar('\n');
 	}
 }
