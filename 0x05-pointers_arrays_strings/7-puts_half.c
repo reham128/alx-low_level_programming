@@ -16,11 +16,7 @@ void puts_half(char *str)
 	int start_index;
 	int i;
 
-	if (length % 2 == 0)
-	{
-		start_index = length / 2;
-	}
-	else
+	if (length % 2 == 1)
 	{
 		start_index = (length - 1) / 2;
 	}
