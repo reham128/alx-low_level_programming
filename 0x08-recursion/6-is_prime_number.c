@@ -11,11 +11,12 @@ int tmp(int n, int x);
  */
 int tmp(int n, int x)
 {
-	if (n % x == 0 || n <= 1)
+	if (n % x == 0)
 	{
 		return (0);
 	}
-	else if (x > 1 && x <= n - 1)
+	else if (x < (n / 2))
+
 		return (tmp(n, x + 1));
 	else
 		return (1);
