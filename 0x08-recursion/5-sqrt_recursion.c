@@ -35,7 +35,7 @@ int root(int n, int x)
 */
 int _sqrt_recursion(int n)
 {
-	if (n >= 0)
+	if (n > 0)
 		return (root(n, 0));
 	else
 		return (-1);
