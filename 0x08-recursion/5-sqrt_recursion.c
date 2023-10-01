@@ -1,5 +1,5 @@
 #include "main.h"
-int root(int n, int x);
+int root(int n);
 /**
  * root - function to find the square of the root number.
  *
@@ -9,19 +9,20 @@ int root(int n, int x);
  *
  * Return: x the value of root to n.
 */
-int root(int n, int x)
+int root(int n)
 {
+	int x = n - 1;
 	int new = x * x;
 
 	if (n > new)
 	{
-		int newRoot = root(n, x + 1);
+		int newRoot = root(x - 1);
 
 		return (newRoot);
 	}
 	else if (new == n)
 	{
-		return (x);
+		return (new);
 	}
 	else
 		return (-1);
@@ -36,7 +37,7 @@ int root(int n, int x)
 int _sqrt_recursion(int n)
 {
 	if (n > 0)
-		return (root(n, 0));
+		return (root(n - 1));
 	else
 		return (-1);
 }
