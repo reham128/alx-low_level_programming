@@ -6,6 +6,8 @@ int tmp(int n, int x);
  * @n: the number to check.
  *
  * @x: increasing to be a divisor from 2 to just befor n.
+ *
+ * Return: 1 for success
  */
 int tmp(int n, int x)
 {
@@ -13,8 +15,10 @@ int tmp(int n, int x)
 	{
 		return (0);
 	}
-	else
+	else if (x > 1 && x <= n - 1)
 		return (tmp(n, x + 1));
+	else
+		return (1);
 }
 /**
  * is_prime_number - a function determin if a n is prime or not.
