@@ -9,15 +9,15 @@
 char *_strdup(char *str)
 {
 	char *dup;
-	int len = 0;
+	int len = 1;
 	int i;
 
-	if(str == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; str[i] == '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		len = len + 1;
 	}
