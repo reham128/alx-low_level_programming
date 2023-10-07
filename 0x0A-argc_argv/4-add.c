@@ -25,16 +25,13 @@ int main(int argc, char *argv[])
 		{
 			for (b = 0; argv[c][b] != '\0'; b++)
 			{
-				if ((isdigit(argv[c][b])))
-				{
-					a = atoi(argv[c]);
-					add = add + a;
-				}
-				else
+				if (!(isdigit(argv[c][b])))
 				{
 					printf("Error\n");
 					return (1);
 				}
+				a = atoi(argv[c]);
+				add = add + a;
 			}
 		}
 		printf("%d\n", add);
