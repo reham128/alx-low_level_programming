@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int c, b, a;
+	int c, b;
 	int add = 0;
 
 	if (argc == 1)
@@ -30,11 +30,10 @@ int main(int argc, char *argv[])
 					printf("Error\n");
 					return (1);
 				}
-				a = atoi(argv[c]);
-				add = add + a;
+				add = add + atoi(argv[c]);
 			}
 		}
-		printf("%d\n", add);
 	}
+	printf("%d\n", add);
 	return (0);
 }
