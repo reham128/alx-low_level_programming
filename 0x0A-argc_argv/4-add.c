@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int c, a;
+	int c, b, a;
 	int add = 0;
 
 	if (argc == 1)
@@ -23,18 +23,21 @@ int main(int argc, char *argv[])
 	{
 		for (c = 0; c < argc; c++)
 		{
-			 a = atoi(argv[c]);
-			if (!(isdigit(argv[c][0])) || a < 0)
+			for (b = 0; argv[c][b] != '\0'; b++)
 			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-			{
-				add = add + a;
-				printf("%d\n", add);
+				if ((isdigit(argv[c][b])))
+				{
+					a = atoi(argv[c]);
+					add = add + a;
+				}
+				else
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 		}
+		printf("%d\n", add);
 	}
 	return (0);
 }
