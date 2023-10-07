@@ -23,14 +23,14 @@ int main(int argc, char *argv[])
 	{
 		for (c = 0; c < argc; c++)
 		{
-			if (!(isdigit(argv[c])))
+			 a = atoi(argv[c]);
+			if (!(isdigit(argv[c][0])) || a < 0)
 			{
 				printf("Error\n");
 				return (1);
 			}
 			else
 			{
-				a = atoi(argv[c]);
 				add = add + a;
 				printf("%d\n", add);
 			}
