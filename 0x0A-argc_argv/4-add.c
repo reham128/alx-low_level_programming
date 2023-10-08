@@ -19,10 +19,8 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	else
+	for (c = 0; c < argc; c++)
 	{
-		for (c = 0; c < argc; c++)
-		{
 			for (b = 0; argv[c][b] != '\0'; b++)
 			{
 				if (!(isdigit(argv[c][b])))
@@ -30,10 +28,10 @@ int main(int argc, char *argv[])
 					printf("Error\n");
 					return (1);
 				}
-				add = add + atoi(argv[c]);
 			}
-		}
+			add = add + atoi(argv[c]);
 	}
+
 	printf("%d\n", add);
 	return (0);
 }

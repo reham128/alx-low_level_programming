@@ -25,10 +25,10 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (cents >= ar[i])
+			while (cents >= ar[i])
 			{
 				cents = cents - ar[i];
-				coins = coins + 1;
+				coins++;
 			}
 		}
 	}
