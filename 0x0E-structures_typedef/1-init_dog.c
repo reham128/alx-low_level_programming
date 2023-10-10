@@ -8,6 +8,8 @@
  *
  * @owner: the name of the Dog Owner
  *
+ * @d: is a pointer to struct dog
+ *
  * Return: void function.
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
