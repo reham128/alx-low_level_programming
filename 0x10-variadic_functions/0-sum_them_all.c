@@ -19,10 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 		{
 			return (0);
 		}
-		else
-		{
-			result = result + va_arg(nums, int);
-		}
+		result = result + va_arg(nums, int);
 	}
 	va_end(nums);
 	return (result);
