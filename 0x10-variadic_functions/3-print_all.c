@@ -10,7 +10,6 @@ void print_all(const char * const format, ...)
 {
 	unsigned int a = 0;
 	int b;
-	char *print;
 	va_list printAll;
 
 	va_start(printAll, format);
@@ -31,10 +30,8 @@ void print_all(const char * const format, ...)
 				b = 0;
 				break;
 			case 's':
-				print = va_arg(printAll, char *);
-				if (print == NULL)
-					printf("(nil)");
-				printf("%s", print);
+				printf("%s", va_arg(printAll, char *));
+				b = 0;
 				break;
 			default:
 				b = 1;
