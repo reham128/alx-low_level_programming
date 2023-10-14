@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	y = atoi(argv[3]);
 
 	opFunc = get_op_func(argv[2]);
-	if (opFunc == NULL || op[1] !='\0')
+	if (opFunc == NULL)
 	{
 		printf("Error\n");
 		exit(99);
