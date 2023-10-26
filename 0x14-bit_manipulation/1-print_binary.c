@@ -6,8 +6,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int a, b, c;
+	unsigned int b, c;
 	int new = 0;
+	int a;
 
 	if (n == 1)
 	{
