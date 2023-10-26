@@ -19,7 +19,7 @@ void print_binary(unsigned long int n)
 	else
 	{
 		print_binary(n >> 1);
-		b = (n & 1UL);
+		b = (1UL & n);
 		if (b)
 		{
 			_putchar('1');
