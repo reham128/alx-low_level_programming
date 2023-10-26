@@ -20,11 +20,11 @@ void print_binary(unsigned long int n)
 	{
 		print_binary(n >> 1);
 		b = (n & 1UL);
-		if (b == 1)
+		if (b)
 		{
 			_putchar('1');
 		}
-		else if (b == 0)
+		else if (!b)
 		{
 			_putchar('0');
 		}
