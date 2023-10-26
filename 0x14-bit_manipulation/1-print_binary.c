@@ -6,9 +6,9 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int c;
+	unsigned int b, c;
 	int new = 0;
-	int a, b;
+	int a;
 
 	if (n == 1)
 	{
@@ -20,7 +20,7 @@ void print_binary(unsigned long int n)
 	}
 	else
 	{
-		for (a = 64; a > 0; a--)
+		for (a = 32; a >= 0; a--)
 		{
 			b = (n >> a);
 			c = (1 & b);
