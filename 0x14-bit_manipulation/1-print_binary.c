@@ -8,7 +8,7 @@ void print_binary(unsigned long int n)
 {
 	unsigned int b, c;
 	int new = 0;
-	int a;
+	unsigned long int a = 63;
 
 	if (n == 1)
 	{
@@ -20,7 +20,7 @@ void print_binary(unsigned long int n)
 	}
 	else
 	{
-		for (a = 63; a >= 0; a--)
+		while (a)
 		{
 			b = (n >> a);
 			c = (1UL & b);
@@ -33,6 +33,7 @@ void print_binary(unsigned long int n)
 			{
 				_putchar('0');
 			}
+			a--;
 		}
 		if (!new)
 		{
