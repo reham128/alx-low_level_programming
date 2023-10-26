@@ -23,7 +23,7 @@ void print_binary(unsigned long int n)
 		for (a = 63; a >= 0; a--)
 		{
 			b = (n >> a);
-			c = (1 & b);
+			c = (1UL & b);
 			if (c)
 			{
 				_putchar('1');
