@@ -9,13 +9,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t rdNum, wrNum;
 	char *ptr;
-	int f_des = open(filename, O_RDONLY);
+	int f_des;
 
 	if (filename == NULL || !letters)
 	{
 		return (0);
 	}
-	else if (f_des == -1)
+	f_des = open(filename, O_RDONLY);
+	if (f_des == -1)
 	{
 		return (0);
 	}
