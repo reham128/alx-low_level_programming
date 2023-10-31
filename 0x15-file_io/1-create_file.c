@@ -14,20 +14,20 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	if (text_content != NULL)
-	{
-		for (strL = 0; text_content[strL]; strL++)
-			;
-	}
 	f_des = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (f_des == -1)
 	{
 		return (-1);
 	}
-	wRite = write(f_des, text_content, strL);
-	if (wRite == -1)
+	if (text_content != NULL)
 	{
-		return (-1);
+		for (strL = 0; text_content[strL]; strL++)
+			;
+		wRite = write(f_des, text_content, strL);
+		if (wRite == -1)
+		{
+			return (-1);
+		}
 	}
 	close(f_des);
 	return (1);
