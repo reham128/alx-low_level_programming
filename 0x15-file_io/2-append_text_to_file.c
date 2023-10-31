@@ -23,8 +23,8 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		for (strL = 0; text_content[strL]; strL++)
 			;
+		wRite = write(f_des, text_content, strL);
 	}
-	wRite = write(f_des, text_content, strL);
 	if (wRite == -1)
 	{
 		return (-1);
